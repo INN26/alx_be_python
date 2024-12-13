@@ -2,7 +2,7 @@
 #  It will then project these savings over a year, assuming a fixed interest rate
 
 #user input for financial details
-monthly_income = int(input("Enter your monthly income"))
+monthly_income = int(input("Enter your monthly income "))
 monthly_expenses = int(input("Enter your total monthly expenses"))
 
 # Calculate Monthly Savings:
