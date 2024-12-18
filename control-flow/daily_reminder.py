@@ -4,7 +4,7 @@ task = input("Enter your task:")
 # Prompt for the task’s priority (high/medium/loww)
 
 priority = input("Priority (high/medium/low):").lower()
-time_bound = input("Is it time bound? (yes/no):").lower() #Get time sensitivity
+time_bound = input("Is it time-bound? (yes/no):").lower() #Get time sensitivity
 
 #Process the Task Based on Priority and Time Sensitivity
 match priority:
@@ -20,6 +20,7 @@ if time_bound == "yes":
 
 else:
      print(f"Note: '{task}' is  {priority_message}!")
+     print("Reminder")
 
 
          
