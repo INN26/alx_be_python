@@ -1,10 +1,12 @@
 #Ask the user to input a task description and save it into a task variable
 task = input("Enter your task:")
 
-# Prompt for the task’s priority (high, medium, low).
+# Prompt for the task’s priority (high, medium, low)
+time_bound = input("is it time bound? (yes or no):").lower() #Get time sensitivity
+
 priority = input("priority (high, medium, low):").lower()
 
-time_bound = input("is it time bound? (yes or no):").lower() #Get time sensitivity
+
 
 #Process the Task Based on Priority and Time Sensitivity
 match priority:
