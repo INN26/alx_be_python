@@ -10,13 +10,13 @@ def display_menu():
 
 #Prompt the user for the item name and append it
 def add_item():
-    item = input("enter the item to add:")
+    item = input["enter the item to add:"]
     shopping_list.append(item)
     print(f"{item} has been added to the shopping list.")
 
 #Ask the user for the item name and remove it 
 def remove_item():
-    item = input("add  item you want to remove:")
+    item = input("Enter  item you want to remove:")
     if item in shopping_list:
        shopping_list.remove(item)
        print(f"{item} has been removed from the shopping list.")
@@ -39,17 +39,14 @@ def main():
         display_menu()
         choice = input("Enter your choice: ")
 
-        if choice == '1':
-            # Prompt for and add an item
-            add_item()
+        if choice == '1': 
+            add_item()# Prompt for and add an item
             pass
         elif choice == '2':
-            # Prompt for and remove an item
-            remove_item()
+            remove_item() # Prompt for and remove an item
             pass
         elif choice == '3':
-            # Display the shopping list
-            view_list()
+            view_list() # Display the shopping list
             pass
         elif choice == '4':
             print("Goodbye!")
