@@ -8,11 +8,11 @@ class Book:
 
     def __del__(self):
        """ method to print a message when a book object is deleted"""
-       print (f"Deleting '{self.title} by {self.author}, published in {self.year}")
+       print (f"Deleting {self.title}")
     
     def __str__(self):
         """string representation of the book object"""
-        return f"title:'{self.title}', by author:{self.author}, published in year:{self.year}."
+        return f"{self.title} by {self.author}, published in {self.year}"
     
     def __repr__(self):
         """Official representation of the Book object"""
